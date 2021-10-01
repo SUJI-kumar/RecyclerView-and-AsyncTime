@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:id="@+id/recycler_layout"
+        android:background="#ffffff">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20sp"
+            app:cardCornerRadius="60dp">
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/textview"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/imageview"
+            android:textColor="#000000"
+            android:text="Sujit"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/textview2"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="75sp"
+            android:layout_toRightOf="@+id/textview"
+            android:text="K18KH"
+            android:textSize="12dp"/>
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/textview2"
+            android:layout_marginLeft="-59dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/textview2"
+            android:id="@+id/delete"
+            android:background="@android:color/holo_red_dark" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:id="@+id/textview3"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/imageview"
+            android:layout_below="@+id/textview"
+            android:text="how r u"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/divider"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="20sp"
+            android:layout_toRightOf="@+id/imageview"
+            android:layout_below="@+id/imageview"
+            android:textColor="#CDC7C7"
+            android:text="------------------------------------------------------"
+            android:textSize="15dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
